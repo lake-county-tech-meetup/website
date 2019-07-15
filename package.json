@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^2.13.21",
+    "gatsby-cli": "^2.7.14",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.3",
     "gatsby-plugin-offline": "^2.2.4",
@@ -26,11 +27,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "yarn gatsby build",
+    "develop": "yarn gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "yarn gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
