@@ -5,6 +5,8 @@ exports.default = void 0;
 
 var _loader = require("./loader");
 
+var _findPath = require("./find-path");
+
 class DevLoader extends _loader.BaseLoader {
   constructor(syncRequires, matchPaths) {
     const loadComponent = chunkName => Promise.resolve(syncRequires.components[chunkName]);
@@ -13,7 +15,7 @@ class DevLoader extends _loader.BaseLoader {
   }
 
   loadPage(pagePath) {
-    const realPath = this.pathFinder.find(pagePath);
+    const realPath = (0, _findPath.cleanPath)(pagePath);
     return super.loadPage(realPath).then(result => {
       require(`./socketIo`).getPageData(realPath);
 
