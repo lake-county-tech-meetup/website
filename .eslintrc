@@ -3,13 +3,15 @@
   "parserOptions": {
     "ecmaVersion": 7
   },
-  "plugins": ["babel"],
+  "plugins": ["babel", "react-hooks"],
   "extends": "airbnb",
   "env": { "browser": true },
   "settings": {
     "polyfills": ["fetch"]
   },
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "quotes": [2, "backtick", "avoid-escape"],
     "babel/semi": [2, "always"],
     "react/button-has-type": [0],
