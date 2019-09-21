@@ -8,6 +8,6 @@ exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/jacobevans/personalProjects/lake-county-tech-meetup/.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/Users/jacobevans/personalProjects/lake-county-tech-meetup/src/pages/404.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/jacobevans/personalProjects/lake-county-tech-meetup/src/pages/index.js"))),
-  "component---src-pages-page-2-js": hot(preferDefault(require("/Users/jacobevans/personalProjects/lake-county-tech-meetup/src/pages/page-2.js")))
+  "component---src-pages-about-us-js": hot(preferDefault(require("/Users/jacobevans/personalProjects/lake-county-tech-meetup/src/pages/about-us.js")))
 }
 

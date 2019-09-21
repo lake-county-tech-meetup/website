@@ -4,7 +4,7 @@
     "ecmaVersion": 7
   },
   "plugins": ["babel", "react-hooks"],
-  "extends": "airbnb",
+  "extends": ["airbnb", "eslint:recommended"],
   "env": { "browser": true },
   "settings": {
     "polyfills": ["fetch"]
@@ -37,7 +37,7 @@
     "babel/object-curly-spacing": [0],
     "babel/no-invalid-this": [1],
     "no-console": [0],
-    "import/no-extraneous-dependencies": [0],
+    "import/no-extraneous-dependencies": [1],
     "import/prefer-default-export": [0],
     "react/no-unused-state": [1],
     "no-unexpected-multiline": [0],
@@ -45,10 +45,10 @@
     "react/no-string-refs": [0],
     "react/destructuring-assignment": [1],
     "react/no-access-state-in-setstate": [0],
-    "jsx-a11y/click-events-have-key-events": [0],
-    "jsx-a11y/no-static-element-interactions": [0],
-    "jsx-a11y/label-has-for": [0],
-    "jsx-a11y/alt-text": [0],
+    "jsx-a11y/click-events-have-key-events": [1],
+    "jsx-a11y/no-static-element-interactions": [1],
+    "jsx-a11y/label-has-for": [1],
+    "jsx-a11y/alt-text": [1],
     "arrow-parens": [0]
   }
 }
