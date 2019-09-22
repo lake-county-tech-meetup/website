@@ -4,6 +4,7 @@ import React from 'react';
 const headerNameStyle = {
   color: `white`,
   textDecoration: `none`,
+  marginRight: `2vw`,
 };
 const Header = () => (
   <header
@@ -19,7 +20,7 @@ const Header = () => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ display: `flex`, margin: 0, justifyContent: `flex-start` }}>
         <Link
           to="/"
           style={{
