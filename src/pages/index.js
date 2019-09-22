@@ -17,7 +17,8 @@ const useFetch = () => {
       }
     }
   `);
-  return [...data.allStaticJson.nodes[0]];
+  const arr = [...data.allStaticJson.nodes];
+  console.log(arr);
 };
 const IndexPage = () => {
   console.log(useFetch());

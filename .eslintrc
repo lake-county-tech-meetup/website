@@ -1,11 +1,11 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 7
+    "ecmaVersion": 10
   },
   "plugins": ["babel", "react-hooks"],
   "extends": ["airbnb", "eslint:recommended"],
-  "env": { "browser": true },
+  "env": { "browser": true, "node": true, "es6": true },
   "settings": {
     "polyfills": ["fetch"]
   },
@@ -13,7 +13,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "quotes": [2, "backtick", "avoid-escape"],
-    "babel/semi": [2, "always"],
+    "semi": "error",
     "react/button-has-type": [0],
     "react/forbid-prop-types": [0],
     "react/no-unused-prop-types": [0],
