@@ -2,7 +2,7 @@
   "name": "lake-county-tech-meetup",
   "private": true,
   "description": "Website for lake-county-tech-meetup",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "lake-county-tech-meetup-collaboration",
   "license": "MIT",
   "scripts": {
