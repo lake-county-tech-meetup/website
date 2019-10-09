@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Lakewood Tech Meetup`,
-    description: `A website for a local meetup in Lakewood County Illinois, all things
+    title: `Lake County Tech Meetup`,
+    description: `A website for a local meetup in Lake County Illinois, all things
     technology, web, cloud, devOps, cybersecurity / infosec, blockchain, 
     @ThePracticalDev supporters ...etc.`,
     author: `@jacobMGEvans`,
@@ -27,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `lakewood-tech-meetup`,
-        short_name: `lakewood-tech`,
+        name: `Lake County Tech Meetup`,
+        short_name: `Lake Co. Tech`,
         start_url: `/`,
         background_color: `#249`,
         theme_color: `#249`,
