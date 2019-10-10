@@ -2,7 +2,7 @@
   "projectName": "lake-county-tech-meetup",
   "projectOwner": "lake-county-tech-meetup",
   "repoType": "github",
-  "repoHost": "https://github.com/",
+  "repoHost": "https://github.com/JacobMGEvans/lake-county-tech-meetup",
   "files": [
     "README.md"
   ],
@@ -19,10 +19,11 @@
         "code",
         "design",
         "ideas",
-        "platform",
         "question",
         "review",
-        "talk"
+        "bug",
+        "blog",
+        "test"
       ]
     }
   ],
