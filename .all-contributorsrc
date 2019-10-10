@@ -3,14 +3,12 @@
   "projectOwner": "lake-county-tech-meetup",
   "repoType": "github",
   "repoHost": "https://github.com/JacobMGEvans/lake-county-tech-meetup",
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "commit": true,
   "commitConvention": "eslint",
   "contributors": [
-   {
+    {
       "login": "JacobMGEvans",
       "name": "Jacob M-G Evans",
       "avatar_url": "https://avatars1.githubusercontent.com/u/27247160?v=4",
@@ -32,34 +30,22 @@
       "name": "Stephy",
       "avatar_url": "https://avatars3.githubusercontent.com/u/6765732?s=460&v=4",
       "profile": "https://github.com/blindingstars",
-      "contributions": [
-        "code",
-        "design",
-        "ideas",
-        "bugs"
-      ]
+      "contributions": ["code", "design", "ideas", "bug"]
     },
-    
-      {
+    {
       "login": "bhagatparwinder",
       "name": "Parwinder Bhagat",
       "avatar_url": "https://avatars3.githubusercontent.com/u/6765732?s=460&v=4",
       "profile": "https://github.com/bhagatparwinder",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
-     },
-    
-      {
+    {
       "login": "zbeach",
       "name": "Zack Beach",
       "avatar_url": "https://avatars3.githubusercontent.com/u/11981152?s=400&v=4",
       "profile": "https://github.com/zbeach",
-      "contributions": [
-        "doc"
-      ]
-    },
+      "contributions": ["doc"]
+    }
   ],
   "contributorsPerLine": 7
 }
