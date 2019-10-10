@@ -11,7 +11,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "yarn develop",
     "serve": "yarn gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "build:contrib": "yarn all-contributors generate",
+    "cleanup:fix": "yarn eslint --fix src && prettier --write src/**/*.{js,jsx}"
   },
   "repository": {
     "type": "git",

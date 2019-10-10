@@ -34,7 +34,9 @@ const Header = () => (
           style={{
             ...headerNameStyle,
           }}
-        > About Us
+        >
+          {' '}
+          About Us
         </Link>
       </h1>
     </div>
