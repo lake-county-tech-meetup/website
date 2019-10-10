@@ -2,13 +2,27 @@
   "projectName": "lake-county-tech-meetup",
   "projectOwner": "lake-county-tech-meetup",
   "repoType": "github",
-  "repoHost": "/JacobMGEvans/lake-county-tech-meetup",
+  "repoHost": "https://github.com/",
   "files": [
     "README.md"
   ],
   "imageSize": 100,
   "commit": true,
   "commitConvention": "eslint",
-  "contributors": [],
+  "contributors": [
+    "login": "JacobMGEvans",
+      "name": "Jacob M-G Evans",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/27247160?v=4",
+      "profile": "https://JacobMGEvans.com",
+      "contributions": [
+        "code",
+        "design",
+        "ideas",
+        "platform",
+        "question",
+        "review",
+        "talk"
+      ]
+  ],
   "contributorsPerLine": 7
 }
