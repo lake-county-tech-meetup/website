@@ -24,15 +24,19 @@
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.3",
     "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-postcss": "^2.1.11",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-sharp": "^2.2.7",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-json": "^2.2.13",
     "gatsby-transformer-sharp": "^2.2.3",
+    "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "tailwindcss": "^1.1.2",
+    "tailwindcss-transitions": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
@@ -50,6 +54,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-hooks": "^1.6.1",
+    "postcss-nested": "^4.1.2",
     "prettier": "^1.18.2"
   },
   "keywords": [
