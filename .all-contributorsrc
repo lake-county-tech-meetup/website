@@ -1,0 +1,14 @@
+{
+  "projectName": "lake-county-tech-meetup",
+  "projectOwner": "lake-county-tech-meetup",
+  "repoType": "github",
+  "repoHost": "/JacobMGEvans/lake-county-tech-meetup",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributors": [],
+  "contributorsPerLine": 7
+}
