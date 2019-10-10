@@ -1,5 +1,5 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
@@ -89,12 +89,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/JacobMGEvans/"><img src="https://avatars1.githubusercontent.com/u/27247160?v=4" width="100px;" alt="Jacob M-G Evans"/><br /><sub><b>Jacob M-G Evans</b></sub></a><br /><a href="https://github.com/JacobMGEvans/lake-county-tech-meetup/lake-county-tech-meetup/lake-county-tech-meetup/commits?author=JacobMGEvans" title="Code">💻</a> <a href="#design-JacobMGEvans" title="Design">🎨</a> <a href="#ideas-JacobMGEvans" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-JacobMGEvans" title="Answering Questions">💬</a> <a href="#review-JacobMGEvans" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/JacobMGEvans/lake-county-tech-meetup/lake-county-tech-meetup/lake-county-tech-meetup/issues?q=author%3AJacobMGEvans" title="Bug reports">🐛</a> <a href="#blog-JacobMGEvans" title="Blogposts">📝</a> <a href="https://github.com/JacobMGEvans/lake-county-tech-meetup/lake-county-tech-meetup/lake-county-tech-meetup/commits?author=JacobMGEvans" title="Tests">⚠️</a></td>
-  </tr>
-</table>
-
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
