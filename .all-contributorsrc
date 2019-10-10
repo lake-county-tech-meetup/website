@@ -10,7 +10,7 @@
   "commit": true,
   "commitConvention": "eslint",
   "contributors": [
-    "login": "JacobMGEvans",
+   { "login": "JacobMGEvans",
       "name": "Jacob M-G Evans",
       "avatar_url": "https://avatars1.githubusercontent.com/u/27247160?v=4",
       "profile": "https://JacobMGEvans.com",
@@ -23,6 +23,7 @@
         "review",
         "talk"
       ]
+    }
   ],
   "contributorsPerLine": 7
 }
