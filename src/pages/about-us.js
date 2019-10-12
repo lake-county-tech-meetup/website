@@ -5,9 +5,9 @@ import { DefaultLayout } from '../components/Layouts';
 import SEO from '../components/SEO';
 
 const AboutUs = () => (
-  <DefaultLayout>
+  <DefaultLayout headline="About Us">
     <SEO title="About Us" />
-    <h1>About Us</h1>
+    <p>Coming Soon</p>
     {
       // TODO: Add list of cities & villages (for SEO discovery)
       // List available at http://www.lakecountyil.gov/BusinessDirectoryII.aspx?lngBusinessCategoryID=32

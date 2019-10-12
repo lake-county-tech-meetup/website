@@ -5,10 +5,9 @@ import { DefaultLayout } from '../components/Layouts';
 import SEO from '../components/SEO';
 
 const IndexPage = () => (
-  <DefaultLayout>
+  <DefaultLayout headline={useFetchJson(`headerHome`)}>
     <SEO title="Home" />
     <section>
-      <h1>{useFetchJson(`headerHome`)}</h1>
       <p>{useFetchJson(`summaryBlockHome`)}</p>
       {
         // ? We can change the quote however I think a good quote would be well placed here.
