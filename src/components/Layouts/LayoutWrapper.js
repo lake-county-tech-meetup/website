@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from '../Header';
 import Footer from '../Footer';
+import '../../assets/stylesheets/webfonts.css';
 import '../../assets/stylesheets/style.css';
 
 const LayoutWrapper = ({ children }) => {

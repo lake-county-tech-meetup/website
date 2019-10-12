@@ -8,8 +8,8 @@ module.exports = {
       xl: '1200px',
     },
     fontFamily: {
-      display: ['Gilroy', 'sans-serif'],
-      body: [
+      sans: [
+        'Nunito Sans',
         '-apple-system',
         'BlinkMacSystemFont',
         'Segoe UI',

@@ -8,12 +8,21 @@ html,
 }
 
 #gatsby-focus-wrapper {
-  @apply flex flex-col flex-wrap justify-start;
+  @apply flex flex-col justify-start;
 }
 
-body {
-  line-height: 1.4;
+html {
   font-weight: 400;
+  @apply font-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
 }
 
 main {
@@ -45,12 +54,3 @@ a {
 
 @tailwind components;
 @tailwind utilities;
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.2;
-}
