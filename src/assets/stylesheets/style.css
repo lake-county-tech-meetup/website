@@ -1,5 +1,34 @@
 @tailwind base;
 
+body,
+html,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+#gatsby-focus-wrapper {
+  @apply flex flex-col flex-wrap justify-start;
+}
+
+body {
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+main {
+  p {
+    @apply mb-4;
+  }
+}
+
+cite {
+  &:before {
+    content: '\2014'; /* mdash */
+    margin-right: 0.25em;
+  }
+}
+
 a,
 button,
 input {
@@ -8,19 +37,14 @@ input {
 
 a {
   @apply text-secondary underline;
-}
 
-a:hover {
-  @apply text-secondary-700 underline;
+  &:hover {
+    @apply text-secondary-700 underline;
+  }
 }
 
 @tailwind components;
 @tailwind utilities;
-
-body {
-  line-height: 1.4;
-  font-weight: 400;
-}
 
 h1,
 h2,

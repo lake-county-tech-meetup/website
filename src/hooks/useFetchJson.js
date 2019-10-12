@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from 'gatsby';
 
 //! This can be made more generic/dynamic and agnostic for all JSON fetchs
 export function useFetchJson(key) {
@@ -10,7 +10,8 @@ export function useFetchJson(key) {
             headerHome
             summaryBlockHome
             quote
-         }
+            quoteCite
+          }
         }
       }
     }

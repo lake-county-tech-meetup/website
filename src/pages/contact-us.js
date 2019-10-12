@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import { DefaultLayout } from '../components/Layouts';
+import SEO from '../components/SEO';
 
 const ContactUsPage = () => (
-  <Layout>
+  <DefaultLayout>
     <SEO title="Contact Us" />
     <form name="contact" method="POST" data-netlify="true">
       <p>
@@ -32,7 +32,7 @@ const ContactUsPage = () => (
         <button type="submit">Send</button>
       </p>
     </form>
-  </Layout>
+  </DefaultLayout>
 );
 
 export default ContactUsPage;

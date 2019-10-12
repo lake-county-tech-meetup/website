@@ -7,8 +7,8 @@ import logo from '../assets/images/logo.svg';
 const NavLink = ({ to, children }) => (
   <li>
     <Link
-      className="block font-bold text-primary hover:text-primary no-underline hover:no-underline py-1 md:p-1 md:border-b-4 md:ml-3 border-transparent sm:hover:border-secondary-100"
-      activeClassName="sm:border-secondary"
+      className="block font-bold text-primary hover:text-primary-300 hover:md:text-primary no-underline hover:no-underline py-1 md:px-1 md:border-b-4 md:ml-3 border-transparent sm:hover:border-secondary-100"
+      activeClassName="text-secondary hover:text-secondary-200 md:text-primary hover:md:text-primary md:border-secondary"
       to={to}
     >
       {children}
