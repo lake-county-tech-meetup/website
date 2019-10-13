@@ -10,6 +10,7 @@ export function useFetchJson(key) {
             headerHome
             summaryBlockHome
             quote
+            quoteCite
           }
         }
       }
