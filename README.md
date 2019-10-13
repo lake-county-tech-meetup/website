@@ -65,7 +65,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## Built-in
+## Built With
 <!--- Add other logos here for technologies in use. --->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
