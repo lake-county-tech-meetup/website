@@ -10,7 +10,6 @@ const IndexPage = () => (
     <section>
       <p>{useFetchJson(`summaryBlockHome`)}</p>
       {
-        // ? We can change the quote however I think a good quote would be well placed here.
         // I also suggest Better Comments extension if using VSCode because I use it a lot.
         // Link: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments - Jacob
       }
@@ -18,6 +17,7 @@ const IndexPage = () => (
       <cite className="text-center block">{useFetchJson(`quoteCite`)}</cite>
     </section>
     {
+      //! Make into issues
       // TODO: Venue information and map
       // TODO: Contact information
       // TODO: Submission field for email / Contact Us
