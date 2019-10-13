@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { DefaultLayout } from '../components/Layouts';
-import SEO from '../components/SEO';
+import SEO from '../components/seo';
 
 const NotFoundPage = () => (
   <DefaultLayout headline="404: Not found">

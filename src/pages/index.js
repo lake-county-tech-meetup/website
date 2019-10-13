@@ -17,7 +17,7 @@ const IndexPage = () => (
       <cite className="text-center block">{useFetchJson(`quoteCite`)}</cite>
     </section>
     {
-      //! Make into issues
+      //! Make into issues - Jacob
       // TODO: Venue information and map
       // TODO: Contact information
       // TODO: Submission field for email / Contact Us
