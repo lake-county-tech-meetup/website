@@ -1,7 +1,9 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/lake-county-tech-meetup/lake-county-tech-meetup?style=for-the-badge)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=for-the-badge)](#contributors-)
+<br />
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3b591f57-d7c2-4696-b54e-41f2124af197/deploy-status)](https://app.netlify.com/sites/lake-county-tech-meetup/deploys)
-<script async defer src="https://slack.lakecountytechmeetup.com/slackin.js"></script>
+
 
 # Lake County Tech Meetup
 
