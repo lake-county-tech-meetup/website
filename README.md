@@ -1,5 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e920d651-2a6d-40d8-8346-6758d0705d0b/deploy-status)](https://app.netlify.com/sites/lake-county-tech-meetup/deploys)
 
 # Lake County Tech Meetup
 
