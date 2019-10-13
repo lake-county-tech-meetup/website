@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import { DefaultLayout } from '../components/Layouts';
-import SEO from '../components/SEO';
+import SEO from '../components/seo';
 
 const AboutUs = () => (
   <DefaultLayout headline="About Us">
