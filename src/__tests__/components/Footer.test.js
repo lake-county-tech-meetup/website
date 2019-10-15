@@ -14,12 +14,6 @@ const setup = () => {
 
 describe('Footer Component', () => {
 
-  test('should render', () => {
-    const { container } = setup()
-
-    expect(container).toBeTruthy()
-  })
-
   test('should render correct footer content', () => {
     const { getByText } = setup()
 
