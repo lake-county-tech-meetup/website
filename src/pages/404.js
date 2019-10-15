@@ -7,7 +7,7 @@ const NotFoundPage = () => (
   <DefaultLayout headline="404: Not found">
     <SEO title="404: Not found" />
     <p className="mb-0 text-center">
-      The page you are looking for can't be found.
+      The page you are looking for can&apos;t be found.
     </p>
   </DefaultLayout>
 );
