@@ -11,9 +11,20 @@
     "format": "eslint --fix src",
     "start": "yarn develop",
     "serve": "yarn gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "test": "jest",
     "generate:contrib": "yarn all-contributors generate",
     "cleanup:fix": "yarn eslint --fix src"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "node_modules"
+    ],
+    "testMatch": [
+      "**/?(*.)(test).js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/config/setupTests.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,6 +32,9 @@
     "website": "https://lake-county-tech-meetup.netlify.com"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^4.1.2",
+    "@testing-library/react": "^9.3.0",
+    "@testing-library/react-hooks": "^2.0.3",
     "gatsby": "^2.13.21",
     "gatsby-cli": "^2.7.14",
     "gatsby-image": "^2.2.6",
@@ -32,6 +46,7 @@
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-json": "^2.2.13",
     "gatsby-transformer-sharp": "^2.2.3",
+    "jest": "^24.9.0",
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
