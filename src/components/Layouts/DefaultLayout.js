@@ -5,6 +5,7 @@ const DefaultLayout = ({ children, headline }) => (
   <LayoutWrapper>
     <div className="container">
       {headline && (
+        // message
         <h1 className="text-center text-primary font-bold mt-8 md:mt-0 md:mb-6 text-4xl">
           {headline}
         </h1>
