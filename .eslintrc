@@ -3,13 +3,21 @@
   "parserOptions": {
     "ecmaVersion": 10
   },
-  "plugins": ["babel", "react-hooks"],
-  "extends": ["airbnb"],
+  "plugins": ["babel", "react-hooks", "prettier"],
+  "extends": ["airbnb", "prettier"],
   "env": { "browser": true, "node": true, "es6": true },
   "settings": {
     "polyfills": ["fetch"]
   },
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+  ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "quotes": [2, "backtick", "avoid-escape"],
