@@ -14,7 +14,7 @@ Before you begin contributing to the project, please go through the Code of Cond
 
 ## **Pull Request Process**
 ----------------------------
-Before you procedd for the pull request, Please validate your changes with the following points.
+Before you proceed for the pull request, Please validate your changes with the following points.
 + Ensure any unnecessary install or build dependencies are removed before the end of the layer when doing a build.
 + Ensure all the necessary build dependencies and requisites are available before build and deploy.
 + Update the [README.md](https://github.com/lake-county-tech-meetup/website/blob/master/README.md) with the changes made in the project and any additional steps involved with the smooth install/functioning of the project.
