@@ -1,7 +1,7 @@
 {
   "name": "lake-county-tech-meetup",
   "private": true,
-  "description": "Website for lake-county-tech-meetup",
+  "description": "Website for Lake County Tech Meetup",
   "version": "0.1.2",
   "author": "lake-county-tech-meetup-collaboration",
   "license": "MIT",
@@ -28,13 +28,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JacobMGEvans/lake-county-tech-meetup",
+    "url": "https://github.com/lake-county-tech-meetup/website/",
     "website": "https://lake-county-tech-meetup.netlify.com"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
     "@testing-library/react-hooks": "^2.0.3",
+    "@types/jest": "^24.0.19",
     "gatsby": "^2.13.21",
     "gatsby-cli": "^2.7.14",
     "gatsby-image": "^2.2.6",
@@ -79,6 +80,6 @@
     "gatsby"
   ],
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/lake-county-tech-meetup/website/issues"
   }
 }
