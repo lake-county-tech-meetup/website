@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Lake County Tech Meetup`,
     description: `A website for a local meetup in Lake County Illinois, all things
-    technology, web, cloud, devOps, cybersecurity / infosec, blockchain, 
+    technology, web, cloud, devOps, cybersecurity / infosec, blockchain,
     @ThePracticalDev supporters ...etc.`,
     author: `@jacobMGEvans`,
   },
@@ -12,6 +12,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/database/static`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/events`,
+        name: `events`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -38,6 +45,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-transformer-remark`,
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
