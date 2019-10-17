@@ -13,7 +13,8 @@
     "serve": "yarn gatsby serve",
     "test": "jest",
     "generate:contrib": "yarn all-contributors generate",
-    "cleanup:fix": "yarn eslint --fix src"
+    "cleanup:fix": "yarn eslint --fix src",
+    "clean": "gatsby clean"
   },
   "jest": {
     "testPathIgnorePatterns": [
