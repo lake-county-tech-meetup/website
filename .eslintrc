@@ -7,7 +7,14 @@
   "extends": ["airbnb", "prettier"],
   "env": { "browser": true, "node": true, "es6": true },
   "settings": {
-    "polyfills": ["fetch"]
+    "polyfills": ["fetch"],
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
   },
   "rules": {
     "prettier/prettier": [
@@ -38,7 +45,6 @@
     "class-methods-use-this": [0],
     "react/prefer-stateless-function": [1],
     "no-nested-ternary": [0],
-    "no-undef": [1],
     "react/no-array-index-key": [0],
     "react/prop-types": [0],
     "babel/new-cap": [0],
