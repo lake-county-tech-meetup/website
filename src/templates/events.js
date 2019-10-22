@@ -4,7 +4,7 @@ import Link from 'components/Link';
 import { DefaultLayout } from 'components/Layouts';
 import SEO from 'components/seo';
 
-export default function Template({ data, pageContext, location }) {
+export default function Template({ data }) {
   const {
     allMarkdownRemark: { edges },
   } = data;
