@@ -1,22 +1,26 @@
-import { render } from "@testing-library/react"
+import React from 'react';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
-import Footer from '../../components/footer'
+import Footer from '../../components/footer';
 
 const setup = () => {
-
-  const utils = render(<Footer />)
+  const utils = render(<Footer />);
 
   return {
     ...utils,
-  }
+  };
+};
 
-}
+describe(`Test Suite for Basic Footer Component Behavior`, () => {
+  test(`should render correct footer built with content`, () => {
+    const { getByText } = setup();
 
-describe('Footer Component', () => {
+    expect(getByText(`Gatsby`).innerHTML).toBe(`Gatsby`);
+  });
+  test(`should render Footer`, async () => {
+    const footer = await setup().findByTestId(`footer-id`);
 
-  test('should render correct footer content', () => {
-    const { getByText } = setup()
-
-    expect(getByText('Gatsby')).toHaveTextContent('Gatsby')
-  })
-})
+    expect(footer).toBeInTheDocument();
+  });
+});

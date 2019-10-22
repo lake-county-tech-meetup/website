@@ -20,7 +20,10 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="py-6 bg-white relative z-10 shadow uppercase tracking-wide">
+    <header
+      className="py-6 bg-white relative z-10 shadow uppercase tracking-wide"
+      data-testid="header-id"
+    >
       <nav className="container flex flex-wrap items-center justify-between">
         <Link to="/">
           <img

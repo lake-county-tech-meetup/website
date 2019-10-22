@@ -36,7 +36,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
-    "@testing-library/react-hooks": "^2.0.3",
+    "@testing-library/react-hooks": "^3.1.0",
     "@types/jest": "^24.0.19",
     "gatsby": "^2.16.4",
     "gatsby-awesome-pagination": "^0.3.4",
@@ -68,6 +68,8 @@
     "@babel/preset-react": "7.6.3",
     "all-contributors-cli": "^6.9.1",
     "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.9.0",
+    "babel-preset-gatsby": "^0.2.20",
     "eslint": "6.1.0",
     "eslint-config-airbnb": "18.0.1",
     "eslint-config-prettier": "^6.4.0",
@@ -77,8 +79,10 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "identity-obj-proxy": "^3.0.0",
     "postcss-nested": "^4.1.2",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.10.2"
   },
   "keywords": [
     "gatsby"
