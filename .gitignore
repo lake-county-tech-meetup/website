@@ -1,3 +1,5 @@
+# Some sample event files useful for testing before we have any events
+src/events/*sample-meetup.md
 # Gatsby build directory
 public
 
