@@ -14,18 +14,8 @@
     "test": "jest",
     "generate:contrib": "all-contributors generate",
     "clean": "gatsby clean",
+    "lint": "yarn lint:js",
     "lint:js": "eslint src"
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "node_modules"
-    ],
-    "testMatch": [
-      "**/?(*.)(test).js"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/config/setupTests.js"
-    ]
   },
   "repository": {
     "type": "git",
