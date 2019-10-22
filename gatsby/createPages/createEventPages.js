@@ -1,20 +1,14 @@
 const path = require(`path`);
-const config = require(`../../src/config/siteConfig`);
 
 const createEventPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  // Only allow drafts (pages where published != true) when **NOT** in production
-  const publishStatus =
-    config.activeEnv === `production` ? [true] : [true, false];
-
-  const CREATE_EVENT_PAGES_QUERY = `
+  const result = await graphql(`
     {
       allMarkdownRemark(
         filter: {
-          fields: { sourceInstance: { eq: "events" } }
-          frontmatter: { published: { in: [${publishStatus}] } }
-        },
+          fields: { sourceInstance: { eq: "events" }, published: { eq: true } }
+        }
         sort: { order: DESC, fields: [frontmatter___startDate] }
       ) {
         edges {
@@ -30,9 +24,7 @@ const createEventPages = async ({ actions, graphql, reporter }) => {
         }
       }
     }
-  `;
-
-  const result = await graphql(CREATE_EVENT_PAGES_QUERY);
+  `);
   if (result.errors) {
     reporter.panic(result.errors);
   }
