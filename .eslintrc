@@ -17,14 +17,7 @@
     }
   },
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "semi": true,
-        "singleQuote": true,
-        "trailingComma": "all"
-      }
-  ],
+    "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "quotes": [2, "backtick", "avoid-escape"],
