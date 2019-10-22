@@ -3,7 +3,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 
 import { DefaultLayout } from 'components/Layouts';
-import SEO from 'components/seo';
+import SEO from 'components/SEO';
 
 const EventTemplate = ({ data, pageContext: { next, previous } }) => {
   const { event } = data;

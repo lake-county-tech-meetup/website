@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Link from 'components/Link';
 import { DefaultLayout } from 'components/Layouts';
-import SEO from 'components/seo';
+import SEO from 'components/SEO';
 
 export default function Template({ data }) {
   const {

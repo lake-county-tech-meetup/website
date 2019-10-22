@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-import logo from '../assets/images/logo.svg';
+import logo from 'assets/images/logo.svg';
 
 const NavLink = ({ to, children }) => (
   <li>
