@@ -47,7 +47,27 @@ yarn build
 
 ### Configuration
 
-See `config/siteConfig.js`
+See [config/siteConfig.js](config/siteConfig.js)
+
+### Linting/Style
+
+We use Eslint & Prettier. See [our ESLint config](.eslintrc) & [our prettier config](.prettierrc)
+
+```sh
+yarn lint
+```
+
+or to auto-fix
+
+```sh
+yarn lint --fix
+```
+
+### Testing
+
+```sh
+yarn test
+```
 
 ## Built With
 <!--- Add other logos here for technologies in use. --->

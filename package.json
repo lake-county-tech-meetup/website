@@ -13,7 +13,6 @@
     "serve": "gatsby serve",
     "test": "jest",
     "generate:contrib": "all-contributors generate",
-    "cleanup:fix": "eslint --fix src",
     "clean": "gatsby clean",
     "lint:js": "eslint src"
   },
@@ -78,8 +77,10 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.9",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
+    "lint-staged": "^9.4.2",
     "postcss-nested": "^4.1.2",
     "prettier": "^1.18.2",
     "react-test-renderer": "^16.10.2"
@@ -89,5 +90,16 @@
   ],
   "bugs": {
     "url": "https://github.com/lake-county-tech-meetup/website/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
