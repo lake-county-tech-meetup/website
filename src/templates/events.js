@@ -1,26 +1,45 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Link from 'components/Link';
 import { DefaultLayout } from 'components/Layouts';
 import SEO from 'components/SEO';
+import EventCard from 'components/EventCard';
+import { PaginationLink } from 'components/Pagination';
 
-export default function Template({ data }) {
+const EventsTemplate = ({ data, pageContext }) => {
   const {
     allMarkdownRemark: { edges },
   } = data;
+  const { previousPagePath, nextPagePath } = pageContext;
   return (
     <DefaultLayout headline="Events">
       <SEO title="Events" />
-      {edges.map(({ node }) => {
-        return (
-          <Link key={node.id} to={node.fields.pagePath}>
-            {node.frontmatter.title}
-          </Link>
-        );
-      })}
+      {!edges.length && <>No Events :(</>}
+      {edges &&
+        edges.map(({ node }) => (
+          <EventCard
+            key={node.id}
+            pagePath={node.fields.pagePath}
+            title={node.frontmatter.title}
+            startDate={node.frontmatter.startDate}
+            venue={node.frontmatter.venue}
+            description={node.frontmatter.description || node.excerpt}
+          />
+        ))}
+
+      <div>
+        {/* previousPageLink and nextPageLink were added by the plugin */}
+        {previousPagePath && (
+          <PaginationLink to={previousPagePath}>Previous</PaginationLink>
+        )}
+        {nextPagePath && (
+          <PaginationLink to={nextPagePath}>Next</PaginationLink>
+        )}
+      </div>
     </DefaultLayout>
   );
-}
+};
+
+export default EventsTemplate;
 
 export const pageQuery = graphql`
   query BlogQuery($limit: Int!, $skip: Int!) {
@@ -35,13 +54,19 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          excerpt
           fields {
             slug
             pagePath
           }
           frontmatter {
             title
-            startDate
+            description
+            startDate(formatString: "ddd, MMM Do - h:mm A")
+            venue {
+              name
+              address
+            }
           }
         }
       }

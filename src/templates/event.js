@@ -4,29 +4,32 @@ import { graphql, Link } from 'gatsby';
 
 import { DefaultLayout } from 'components/Layouts';
 import SEO from 'components/SEO';
+import { PaginationLink } from 'components/Pagination';
 
-const EventTemplate = ({ data, pageContext: { next, previous } }) => {
+const EventTemplate = ({ data, pageContext }) => {
   const { event } = data;
+  const { previous, next } = pageContext;
+
   return (
     <DefaultLayout headline={event.frontmatter.title}>
       <SEO title={event.frontmatter.title} />
-      {(previous || next) && (
-        <>
-          {previous && (
-            <Link to={previous.fields.pagePath}>
-              <h4>&lt; Previous</h4>
-              <span>{previous.frontmatter.title}</span>
-            </Link>
-          )}
-          {next && (
-            <Link to={next.fields.pagePath}>
-              <h4>Next &gt;</h4>
-              <span>{next.frontmatter.title}</span>
-            </Link>
-          )}
-        </>
-      )}
+
       <div dangerouslySetInnerHTML={{ __html: event.html }} />
+
+      <Link to="/events/">See More Events</Link>
+
+      <div className="mt-2">
+        {previous && (
+          <PaginationLink to={previous.fields.pagePath}>
+            {`< ${previous.frontmatter.title}`}
+          </PaginationLink>
+        )}
+        {next && (
+          <PaginationLink to={next.fields.pagePath}>
+            {`${next.frontmatter.title} >`}
+          </PaginationLink>
+        )}
+      </div>
     </DefaultLayout>
   );
 };
