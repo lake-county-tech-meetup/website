@@ -32,6 +32,10 @@ const createEventPages = async ({ actions, graphql, reporter }) => {
   const eventTemplate = path.resolve(`./src/templates/event.js`);
   const edges = [...result.data.allMarkdownRemark.edges];
 
+  if (!edges.length) {
+    reporter.warn(`No Events Found. Have you created any yet?`);
+  }
+
   edges.forEach(({ node }, index) => {
     const next = index === 0 ? undefined : edges[index - 1].node;
     const previous =
