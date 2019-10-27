@@ -5,7 +5,7 @@ const config = require(`../../src/config/siteConfig`);
 const paginateEvents = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const results = await graphql(`
+  const result = await graphql(`
     {
       allMarkdownRemark(
         filter: {
@@ -28,10 +28,12 @@ const paginateEvents = async ({ graphql, actions }) => {
       }
     }
   `);
+  const items = [...result.data.allMarkdownRemark.edges];
+
   const eventsTemplate = path.resolve(`./src/templates/events.js`);
   paginate({
     createPage, // The Gatsby `createPage` function
-    items: results.data.allMarkdownRemark.edges, // An array of objects
+    items, // An array of objects
     itemsPerPage: config.events.itemsPerPage,
     pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/events/` : `/events`),
     component: eventsTemplate,
