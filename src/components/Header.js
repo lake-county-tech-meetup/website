@@ -55,6 +55,7 @@ function Header({ siteTitle }) {
         >
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about-us/">About Us</NavLink>
+          <NavLink to="/events/">Events</NavLink>
         </ul>
       </nav>
     </header>
