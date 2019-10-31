@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-import logo from '../assets/images/logo.svg';
+import logo from 'assets/images/logo.svg';
 
 const NavLink = ({ to, children }) => (
   <li>
@@ -55,6 +55,7 @@ function Header({ siteTitle }) {
         >
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about-us/">About Us</NavLink>
+          <NavLink to="/events/">Events</NavLink>
         </ul>
       </nav>
     </header>
