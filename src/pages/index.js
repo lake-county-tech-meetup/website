@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { useFetchJson } from '../hooks/useFetchJson';
-import { DefaultLayout } from '../components/Layouts';
-import SEO from '../components/seo';
+import { useFetchJson } from 'hooks/useFetchJson';
+import { DefaultLayout } from 'components/Layouts';
+import SEO from 'components/SEO';
 
 const IndexPage = () => (
   <DefaultLayout headline={useFetchJson(`headerHome`)}>

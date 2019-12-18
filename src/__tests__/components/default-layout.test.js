@@ -14,6 +14,6 @@ const setup = () => {
 
 describe(`Name of the group`, () => {
   test(`should `, async () => {
-    console.log(setup());
+    // console.log(setup());
   });
 });

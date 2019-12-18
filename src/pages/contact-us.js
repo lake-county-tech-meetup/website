@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { DefaultLayout } from '../components/Layouts';
-import SEO from '../components/seo';
+import { DefaultLayout } from 'components/Layouts';
+import SEO from 'components/SEO';
 
 const ContactUsPage = () => (
   <DefaultLayout>

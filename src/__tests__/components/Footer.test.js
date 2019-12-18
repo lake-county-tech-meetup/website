@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import Footer from '../../components/footer';
+import Footer from 'components/Footer';
 
 const setup = () => {
   const utils = render(<Footer />);
