@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@types/jest": "^24.0.19",
-    "gatsby": "^2.16.4",
+    "gatsby": "^2.19.49",
     "gatsby-awesome-pagination": "^0.3.4",
     "gatsby-cli": "^2.8.2",
     "gatsby-image": "^2.2.6",
@@ -69,7 +69,7 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.0.9",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "lint-staged": "^9.4.2",
     "postcss-nested": "^4.1.2",
     "prettier": "^1.18.2",
